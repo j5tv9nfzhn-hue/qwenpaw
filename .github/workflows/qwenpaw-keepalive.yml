@@ -2,8 +2,8 @@ name: qwenpaw-keepalive
 
 on:
   schedule:
-    # 每 6 小时运行一次（UTC）。
-    - cron: "17 */6 * * *"
+    # 临时验证：每 5 分钟运行一次（GitHub Actions schedule 最短间隔）。
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
